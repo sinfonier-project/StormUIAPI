@@ -173,7 +173,7 @@ class StormUIAPI:
 		topologies = response["topologies"]
 		for topo in topologies:
 			if topo["name"] == topologyname:
-				response = getTopology(topo["id"])
+				response = self.getTopology(topo["id"])
 				return response
 		return {}
 
